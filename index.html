@@ -8,7 +8,7 @@
 </head>
 <body>
 	<nav class="navbar fixed-top navbar-default" id="header">
-		It's Player <span>One's</span> Turn
+		Player <span>One</span>, your turn!
 	</nav>
 	<div id="container">
 		<div class="row">
@@ -19,22 +19,28 @@
 							<div class="divTable">
 								<div class="divTableBody">
 									<div class="divTableRow">
-										<div class="divTableCell">&nbsp;</div>
-										<div class="divTableCell">&nbsp;</div>
-										<div class="divTableCell">&nbsp;</div>
+										<div class="divTableCell" id="1">&nbsp;</div>
+										<div class="divTableCell" id="2">&nbsp;</div>
+										<div class="divTableCell" id="3">&nbsp;</div>
 									</div>
 									<div class="divTableRow">
-										<div class="divTableCell">&nbsp;</div>
-										<div class="divTableCell">&nbsp;</div>
-										<div class="divTableCell">&nbsp;</div>
+										<div class="divTableCell" id="4">&nbsp;</div>
+										<div class="divTableCell" id="5">&nbsp;</div>
+										<div class="divTableCell" id="6">&nbsp;</div>
 									</div>
 									<div class="divTableRow">
-										<div class="divTableCell">&nbsp;</div>
-										<div class="divTableCell">&nbsp;</div>
-										<div class="divTableCell">&nbsp;</div>
+										<div class="divTableCell" id="7">&nbsp;</div>
+										<div class="divTableCell" id="8">&nbsp;</div>
+										<div class="divTableCell" id="9">&nbsp;</div>
 									</div>
 								</div>
 							</div>
+						</div>
+
+						<br>
+						
+						<div>
+							<button type="button" class="btn btn-success">RESET</button>
 						</div>
 					</div>
 				</div>
@@ -48,7 +54,7 @@
 							<table class="table">
 							  <thead class="thead-inverse">
 							    <tr>
-							    	<th colspan="2">Player <span>One's</span> Turn</th>
+							    	<th colspan="2"><span id="playerOne">Player One</span></th>
 							    </tr>
 							  </thead>
 							  <tbody>
@@ -64,7 +70,7 @@
 							<table class="table">
 							  <thead class="thead-inverse">
 							    <tr>
-							    	<th colspan="2">Player <span>Two's</span> Turn</th>
+							    	<th colspan="2"><span id="playerTwo">Player Two</span></th>
 							    </tr>
 							  </thead>
 							  <tbody>
@@ -82,11 +88,13 @@
 		</div>
 	</div>
 
+
 	<script
   	src="https://code.jquery.com/jquery-3.2.1.min.js"
   	integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
   	crossorigin="anonymous"></script>
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+	<script type="text/javascript" src="tictactoe.js"></script>
 </body>
 </html>
 
